@@ -10,15 +10,23 @@
 <body>
     <header>
         <div class="background">
-            <header style="width: 100%;">
+            <div style="display: flex;">
                 <a href="#" class="item1">Home</a>
                 <a href="#" class="item1">Serviço</a>
                 <a href="#" class="item1">Produtos e Suporte</a>
                 <a href="#" class="item1">Contato</a>
                 <a href="#" class="item1">Sobre</a>
-                <img src="./menu.png" alt="menu_icon" class="menu"/>
-            </header>
+            </div>
+            <h3 onclick="ApareceMenu()">Menu</h3>
+            <ul id="lista">
+                <li>Home</li>
+                <li>Serviço</li>
+                <li>Produtos e Suporte</li>
+                <li>Contato</li>
+                <li>Sobre</li>
+            </ul>
         </div>
     </header>
+    <script src="./script.js"></script>
 </body>
 </html>
