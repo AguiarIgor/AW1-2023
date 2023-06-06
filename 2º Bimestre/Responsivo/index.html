@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
     <header>
         <div class="background">
-            <div style="display: flex;">
+            <div class="menu-pc">
                 <a href="#" class="item1">Home</a>
                 <a href="#" class="item1">Serviço</a>
                 <a href="#" class="item1">Produtos e Suporte</a>
                 <a href="#" class="item1">Contato</a>
                 <a href="#" class="item1">Sobre</a>
             </div>
-            <h3 onclick="ApareceMenu()">Menu</h3>
-            <ul id="lista">
-                <li>Home</li>
-                <li>Serviço</li>
-                <li>Produtos e Suporte</li>
-                <li>Contato</li>
-                <li>Sobre</li>
-            </ul>
+            <label>
+                <input class="menu-mobile" type="checkbox"/>
+                <i class="fa-solid fa-bars fa-3x"></i>
+                <ul>
+                    <li>Home</li>
+                    <li>Serviço</li>
+                    <li>Produtos e Suporte</li>
+                    <li>Contato</li>
+                    <li>Sobre</li>
+                </ul>
+            </label>
         </div>
     </header>
-    <script src="./script.js"></script>
 </body>
 </html>
