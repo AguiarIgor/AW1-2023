@@ -11,11 +11,23 @@
     <link href="./style.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="background">
-        <div class="flex-colum" style="flex-direction: column;">
-            <h1>Vamos Começar ?</h1>
+    <main>
+        <div class="flex-column" style="flex-direction: column;">
+            <h1 class="Title1">Let's Start?</h1>
             <img src="./water-cycle-animate.svg"/>
         </div>
-    </div>
+        <div class="flex-column">
+            <form>
+                <h1 class="Title2">[Your Name]</h1>
+                <div>
+                    <label for="nome">User</label>
+                    <input type="text" name="nome" placeholder="Type your name"/>
+                    <label for="senha">Password</label>
+                    <input type="password" name="senha" placeholder="Type your password"/>    
+                </div>
+                <input type="submit" value="Login"/>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

@@ -40,11 +40,19 @@ ul{
     width: 30%;
 }
 
+label{
+    display: none;
+}
+
 .menu-mobile{
     display: none;
 }
 
 @media screen and (max-width: 600px){
+    label{
+        display: block;
+    }
+
     .item1{
         display: none;
     }
