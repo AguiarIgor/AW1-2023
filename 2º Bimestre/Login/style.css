@@ -30,7 +30,7 @@ main{
 }
 
 .Title1{
-    font-size: 80px;
+    font-size: 8vw;
     color: red;
 }
 
@@ -41,7 +41,7 @@ img{
 
 form{
     background-color: #28262c;
-    padding: 50px;
+    padding: 5vh;
     border-radius: 20px;
     height: 50vh;
     width: 15vw;
@@ -50,7 +50,7 @@ form{
 
 .Title2{
     margin: 0;
-    font-size: 60px;
+    font-size: 6vh;
     text-align: center;
     background: linear-gradient(to left, darkred , red);
     -webkit-background-clip: text;
@@ -58,15 +58,15 @@ form{
 }
 
 label{
-    font-size: 30px;
+    font-size: 3vh;
     display: block;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
 }
 
 input[type="text"], input[type="password"]{
     width: 85%;
-    font-size: 20px;
+    font-size: 3vh;
     padding: 20px;
     margin: 0 auto;
     border-radius: 10px;
@@ -75,11 +75,23 @@ input[type="text"], input[type="password"]{
 input[type="submit"]{
     display: block;
     width: 100%;
-    font-size: 50px;
+    font-size: 5vh;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    padding: 15px 0;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    padding: 1.5vh 0;
     background: linear-gradient(to right, darkred , red);
     border-radius: 10px;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2vh;
+    }
+    
+    form{
+        width: 80vw;
+    }
 }
