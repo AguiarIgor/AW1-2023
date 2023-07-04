@@ -6,8 +6,6 @@ video{
 }
 
 main{
-    display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100vw;
@@ -18,9 +16,4 @@ th, td{
     border: 1px black solid;
     padding: 10px;
     background-color: white;
-}
-
-.none{
-    border: none !important;
-    background-color: transparent !important;
 }
