@@ -1,0 +1,56 @@
+*{
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+p{
+    font-size: 20px;
+}
+
+table{
+    margin-left: 150px;
+    border-collapse: collapse;
+    width: 80vh;
+}
+
+thead{
+    color: white;
+    text-align: left;
+}
+
+tbody > tr{
+    border-bottom: 1px rgb(219, 216, 216) solid;
+}
+
+tfoot > tr{
+    border-bottom: 1px rgb(219, 216, 216) solid;
+}
+
+th, td{
+    padding: 10px;
+}
+
+.table2{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+.table2{
+    border: 1px rgb(219, 216, 216) solid;
+}
+
+.td2{
+    padding: 30px;
+    border: 2px rgb(219, 216, 216) solid;
+}
