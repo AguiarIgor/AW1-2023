@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz de JavaScript</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option {
+            margin: 5px 0;
+        }
+
+        .submit-button {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tag {
+            display: none;
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .correct {
+            background-color: #2ecc71;
+            color: #ffffff;
+        }
+
+        .incorrect {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de JavaScript</h1>
+
+        <div class="question">
+            <p>Pergunta 1: Qual é a linguagem de programação que estamos estudando?</p>
+            <div class="options" id="p1">
+                <label class="option"><input type="radio" name="q1" value="javascript"> JavaScript</label>
+                <label class="option"><input type="radio" name="q1" value="python"> Python</label>
+                <label class="option"><input type="radio" name="q1" value="html"> HTML</label>
+                <label class="option"><input type="radio" name="q1" value="css"> CSS</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question">
+            <p>Pergunta 2: Qual a minha fruta favorita?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q2" value="banana" disabled> Banana</label>
+                <label class="option"><input type="radio" name="q2" value="maca" disabled> Maçã</label>
+                <label class="option"><input type="radio" name="q2" value="abacate" disabled> Abacate</label>
+                <label class="option"><input type="radio" name="q2" value="morango" disabled> Morango</label>
+            </div>
+            <button class="submit-button" disabled>Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question">
+            <p>Pergunta 3: Qual é a minha cor favorita?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q3" value="azul" disabled> Azul</label>
+                <label class="option"><input type="radio" name="q3" value="vermelho" disabled> Vermelho</label>
+                <label class="option"><input type="radio" name="q3" value="rosa" disabled> Rosa</label>
+                <label class="option"><input type="radio" name="q3" value="verde" disabled> Verde</label>
+            </div>
+            <button class="submit-button" disabled>Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+        
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question">
+            <p>Pergunta 4: Qual o meu carro preferido?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q4" value="fiat-uno" disabled> Fiat Uno</label>
+                <label class="option"><input type="radio" name="q4" value="fordk" disabled> Ford K</label>
+                <label class="option"><input type="radio" name="q4" value="celta" disabled> Celta</label>
+                <label class="option"><input type="radio" name="q4" value="versa" disabled> Versa</label>
+            </div>
+            <button class="submit-button" disabled>Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question">
+            <p>Pergunta 5: Qual o meu jogo preferido?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q5" value="god-of-war" disabled> God Of War</label>
+                <label class="option"><input type="radio" name="q5" value="horizon-zero" disabled> Horizon Zero Down</label>
+                <label class="option"><input type="radio" name="q5" value="resident-evil" disabled> Resident Evil</label>
+                <label class="option"><input type="radio" name="q5" value="horizon-chase" disabled> Horizon Chase Turbo</label>
+            </div>
+            <button class="submit-button" disabled>Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
